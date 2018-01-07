@@ -50,8 +50,8 @@ router.post('/Chat', function(req, res) {
 /* GET argument page. */
 router.get('/argument', function(req, res) {
 
-    var controller = require('./Controller/argument.js');
-    c = new controller();
+    var controller_of_argument = require('./Controller/argument.js');
+    c = new controller_of_argument();
 
 
     c.controller(function(QuestionDoc,ActionDoc){
